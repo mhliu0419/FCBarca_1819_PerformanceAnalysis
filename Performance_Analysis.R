@@ -29,4 +29,4 @@ ggplot(Barca_Home_Data, aes(x=Date,y=FTHG, color = factor(FTAG))) + geom_point(s
 
 ggplot(Barca_Away_Data, aes(x=FTAG,y=FTHG)) + geom_point(size = 7,shape = 1, color = 'red') + geom_text(aes(label = HomeTeam), check_overlap = TRUE) #+ scale_x_date(date_breaks = '2 week')
 
-       
+ggplot(Barca_Home_Data, aes(x=FTHG,y=FTAG)) + geom_point(size = 7,shape = 1, color = 'red') + geom_text(aes(label = AwayTeam), check_overlap = TRUE) #+ scale_x_date(date_breaks = '2 week')
